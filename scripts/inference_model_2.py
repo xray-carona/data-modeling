@@ -14,7 +14,7 @@ class Evaluator(object):
     def __init__(self, model_dir):
         self.labels = ["Normal", "Non-COVID19 Viral", "COVID-19 Viral"]
         self.INPUT_SIZE = (224,224)
-        self.MODEL_GRAPH = model_dir + "model.meta_train"
+        self.MODEL_GRAPH = model_dir + "model.meta_eval"
         self.MODEL = model_dir + "model-2069"
         
     def load_img(self, img):
